@@ -1,5 +1,5 @@
-Summary:	Illuminator -
-Summary(pl):	Illuminator -
+Summary:	Illuminator - viewer and editor for files in the DAFS format
+Summary(pl):	Illuminator - przegl±darka i edytor plików w formacie DAFS
 Name:		illuminator
 Version:	1.0
 Release:	1
@@ -10,11 +10,15 @@ Source1:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/illuminator/illumi
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Illuminator (illum) is the Motif/X11 viewer and editor for files in the 
+DAFS format.
 
 %description -l pl
+Illuminator (illum) jest korzystaj±c± z Motif/X11 przegl±dark± i edytorem
+plików w formacie DAFS.
 
 %prep
-%setup -q
+%setup -q -T -c -a0 -a1
 
 %build
 cd src

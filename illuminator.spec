@@ -8,8 +8,8 @@ Group:		Applications
 ######		Unknown group!
 Group(pl):	Aplikacje
 #http://documents.cfar.umd.edu/ftp/pub/contrib/sources/illuminator/illuminator-version.1.0
-Source0:	http://documents.cfar.umd.edu/ftp/pub/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
-Source1:	http://documents.cfar.umd.edu/ftp/pub/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
+Source0:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
+Source1:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
 Patch0:		
 Buildroot:	/tmp/%{name}-%{version}-root
 

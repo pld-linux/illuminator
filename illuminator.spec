@@ -12,7 +12,7 @@ Source1:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/%{name}/%{name}-ve
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Illuminator (illum) is the Motif/X11 viewer and editor for files in the 
+Illuminator (illum) is the Motif/X11 viewer and editor for files in the
 DAFS format.
 
 %description -l pl

@@ -5,35 +5,30 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications
+Group(de):	Applikationen
 Group(pl):	Aplikacje
 Source0:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
 Source1:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define	_prefix	/usr
 
 %description
 
 %description -l pl
 
 %prep
-rm -rf %name-%version
-mkdir %name-%version
-cd %name-%version
-gzip -dc %{SOURCE0} | tar -xf -
+%setup -q
 
 %build
-cd %name-%version
 cd src
 %{__make} clean
 %{__make}
 
 #./configure --prefix=%{_prefix}
-#make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+#make RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-cd %name-%version/src
+cd src
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix}
 
 #make prefix=$RPM_BUILD_ROOT%{_prefix} install

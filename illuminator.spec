@@ -32,6 +32,7 @@ make
 #make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
+rm -rf $RPM_BUILD_ROOT
 cd %name-%version/src
 make prefix=$RPM_BUILD_ROOT%{_prefix}
 

@@ -1,7 +1,7 @@
 Summary:	Illuminator -
-Summary(pl):	Illuminator -	
+Summary(pl):	Illuminator -
 Name:		illuminator
-Version:	1.0	
+Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications

@@ -7,8 +7,8 @@ License:	GPL
 Group:		Applications
 Group(de):	Applikationen
 Group(pl):	Aplikacje
-Source0:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
-Source1:	http://documents.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
+Source0:	ftp://ftp.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
+Source1:	ftp://ftp.cfar.umd.edu/ftp/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

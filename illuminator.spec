@@ -5,9 +5,9 @@ Version:	1.0
 Release:	1
 License:	GPL
 Group:		Applications
-Source0:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.src.tar.gz
+Source0:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/%{name}/%{name}-version.%{version}/illum.src.tar.gz
 # Source0-md5:	eee2d8d4994f3b564ca20762c0db3f38
-Source1:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/illuminator/illuminator-version.1.0/illum.doc.tar.gz
+Source1:	ftp://ftp.cfar.umd.edu/pub/documents/contrib/sources/%{name}/%{name}-version.%{version}/illum.doc.tar.gz
 # Source1-md5:	d9fab8e90266f29277a32a84b6bd80e7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -38,18 +38,9 @@ cd src
 #make prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 %clean
-#rm -rf $RPM_BUILD_ROOT
-#rm -rf $RPM_BUILD_DIR/%name-%version
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc
 #%attr(,,)
-
-# optional package
-
-#%files
-%defattr(644,root,root,755)
-#%doc
-#%attr(,,)
-#end of optional package

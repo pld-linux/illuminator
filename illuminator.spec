@@ -25,7 +25,7 @@ gzip -dc %{SOURCE0} | tar -xf -
 %build
 cd %name-%version
 cd src
-make clean
+%{__make} clean
 make
 
 #./configure --prefix=%{_prefix}
@@ -34,7 +34,7 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 cd %name-%version/src
-make prefix=$RPM_BUILD_ROOT%{_prefix}
+%{__make} prefix=$RPM_BUILD_ROOT%{_prefix}
 
 #make prefix=$RPM_BUILD_ROOT%{_prefix} install
 

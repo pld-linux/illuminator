@@ -26,7 +26,7 @@ gzip -dc %{SOURCE0} | tar -xf -
 cd %name-%version
 cd src
 %{__make} clean
-make
+%{__make}
 
 #./configure --prefix=%{_prefix}
 #make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"

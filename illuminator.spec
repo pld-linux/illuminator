@@ -1,5 +1,5 @@
 Summary:	Illuminator - viewer and editor for files in the DAFS format
-Summary(pl.UTF-8):   Illuminator - przeglądarka i edytor plików w formacie DAFS
+Summary(pl.UTF-8):	Illuminator - przeglądarka i edytor plików w formacie DAFS
 Name:		illuminator
 Version:	1.0
 Release:	1
